@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groups type="array">
+  <group>
+    <created-at type="datetime">2009-01-18T11:17:13+09:00</created-at>
+    <id type="integer">1</id>
+    <name>Numero Uno</name>
+    <timezone>Brisbane</timezone>
+    <updated-at type="datetime">2009-01-18T11:17:13+09:00</updated-at>
+  </group>
+</groups>

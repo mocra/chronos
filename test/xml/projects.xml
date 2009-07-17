@@ -1,0 +1,43 @@
+<projects type="array">
+  <project>
+    <active type="boolean">true</active>
+    <active-task-assignments-count type="integer">4</active-task-assignments-count>
+    <active-user-assignments-count type="integer">8</active-user-assignments-count>
+    <basecamp-id type="integer" nil="true"></basecamp-id>
+    <bill-by>Tasks</bill-by>
+    <billable type="boolean">true</billable>
+    <cache-version type="integer">0</cache-version>
+    <client-id type="integer">120933</client-id>
+    <code></code>
+    <created-at type="datetime">2009-02-17T10:57:11Z</created-at>
+    <estimate type="decimal" nil="true"></estimate>
+    <estimate-by>none</estimate-by>
+    <fees type="decimal" nil="true"></fees>
+    <highrise-deal-id type="integer" nil="true"></highrise-deal-id>
+    <id type="integer">1</id>
+    <name>The Project</name>
+    <notes></notes>
+    <show-estimates-to-all type="boolean">false</show-estimates-to-all>
+  </project>
+  
+  <project>
+    <active type="boolean">true</active>
+    <active-task-assignments-count type="integer">4</active-task-assignments-count>
+    <active-user-assignments-count type="integer">8</active-user-assignments-count>
+    <basecamp-id type="integer" nil="true"></basecamp-id>
+    <bill-by>Tasks</bill-by>
+    <billable type="boolean">true</billable>
+    <cache-version type="integer">0</cache-version>
+    <client-id type="integer">120933</client-id>
+    <code></code>
+    <created-at type="datetime">2009-02-17T10:57:11Z</created-at>
+    <estimate type="decimal" nil="true"></estimate>
+    <estimate-by>none</estimate-by>
+    <fees type="decimal" nil="true"></fees>
+    <highrise-deal-id type="integer" nil="true"></highrise-deal-id>
+    <id type="integer">1</id>
+    <name>The Other Project</name>
+    <notes></notes>
+    <show-estimates-to-all type="boolean">false</show-estimates-to-all>
+  </project>
+</projects>

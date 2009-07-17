@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users type="array">
+  <user>
+    <cache-version type="integer">1</cache-version>
+    <created-at type="datetime">2009-01-01T00:00:00Z</created-at>
+    <default-expense-category-id type="integer">1</default-expense-category-id>
+    <default-expense-project-id type="integer">1</default-expense-project-id>
+    <default-hourly-rate type="decimal" nil="true"></default-hourly-rate>
+    <default-task-id type="integer">1</default-task-id>
+    <default-time-project-id type="integer">1</default-time-project-id>
+    <department nil="true"></department>
+    <email>person@people.com</email>
+    <email-after-submit type="boolean">true</email-after-submit>
+    <first-name>Person</first-name>
+    <has-access-to-all-future-projects type="boolean">true</has-access-to-all-future-projects>
+    <id type="integer">1</id>
+    <identity-url nil="true"></identity-url>
+    <is-active type="boolean">true</is-active>
+    <is-admin type="boolean">true</is-admin>
+    <is-contractor type="boolean">false</is-contractor>
+    <last-name>People</last-name>
+    <preferred-approval-screen>timeframe</preferred-approval-screen>
+    <preferred-entry-method>daily</preferred-entry-method>
+    <preferred-estimates-screen>all</preferred-estimates-screen>
+    <telephone></telephone>
+    <timezone>Brisbane</timezone>
+    <twitter-username nil="true"></twitter-username>
+  </user>
+  <user>
+    <cache-version type="integer">0</cache-version>
+    <created-at type="datetime">2009-01-01T00:00:00Z</created-at>
+    <default-expense-category-id type="integer" nil="true"></default-expense-category-id>
+    <default-expense-project-id type="integer" nil="true"></default-expense-project-id>
+    <default-hourly-rate type="decimal" nil="true"></default-hourly-rate>
+    <default-task-id type="integer" nil="true"></default-task-id>
+    <default-time-project-id type="integer" nil="true"></default-time-project-id>
+    <department nil="true"></department>
+    <email>person1@people.com</email>
+    <email-after-submit type="boolean">true</email-after-submit>
+    <first-name>Person1</first-name>
+    <has-access-to-all-future-projects type="boolean">false</has-access-to-all-future-projects>
+    <id type="integer">2</id>
+    <identity-url nil="true"></identity-url>
+    <is-active type="boolean">true</is-active>
+    <is-admin type="boolean">true</is-admin>
+    <is-contractor type="boolean">false</is-contractor>
+    <last-name>People</last-name>
+    <preferred-approval-screen>timeframe</preferred-approval-screen>
+    <preferred-entry-method>daily</preferred-entry-method>
+    <preferred-estimates-screen>all</preferred-estimates-screen>
+    <telephone></telephone>
+    <timezone>Brisbane</timezone>
+    <twitter-username nil="true"></twitter-username>
+  </user>  
+  <user>
+    <cache-version type="integer">0</cache-version>
+    <created-at type="datetime">2009-01-01T00:00:00Z</created-at>
+    <default-expense-category-id type="integer" nil="true"></default-expense-category-id>
+    <default-expense-project-id type="integer" nil="true"></default-expense-project-id>
+    <default-hourly-rate type="decimal" nil="true"></default-hourly-rate>
+    <default-task-id type="integer" nil="true"></default-task-id>
+    <default-time-project-id type="integer" nil="true"></default-time-project-id>
+    <department nil="true"></department>
+    <email>truant@people.com</email>
+    <email-after-submit type="boolean">true</email-after-submit>
+    <first-name>Truant</first-name>
+    <has-access-to-all-future-projects type="boolean">false</has-access-to-all-future-projects>
+    <id type="integer">1234567890</id>
+    <identity-url nil="true"></identity-url>
+    <is-active type="boolean">true</is-active>
+    <is-admin type="boolean">true</is-admin>
+    <is-contractor type="boolean">false</is-contractor>
+    <last-name>People</last-name>
+    <preferred-approval-screen>timeframe</preferred-approval-screen>
+    <preferred-entry-method>daily</preferred-entry-method>
+    <preferred-estimates-screen>all</preferred-estimates-screen>
+    <telephone></telephone>
+    <timezone>Brisbane</timezone>
+    <twitter-username nil="true"></twitter-username>
+  </user>
+</users>

@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+# File: script/console
+irb = RUBY_PLATFORM =~ /(:?mswin|mingw)/ ? 'irb.bat' : 'irb'
+
+libs =  " -r irb/completion -r activeresource -r nokogiri"
+# Perhaps use a console_lib to store any extra methods I may want available in the cosole
+# libs << " -r #{File.dirname(__FILE__) + '/../lib/console_lib/console_logger.rb'}"
+reqs = []
+reqs <<  '/../lib/chronos.rb'
+for req in reqs
+  libs <<  " -r #{File.dirname(__FILE__) + req}"
+end
+puts "Loading chronos gem"
+exec "#{irb} #{libs} --simple-prompt"

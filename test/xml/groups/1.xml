@@ -1,0 +1,65 @@
+<statuses type="array">
+  <status>
+    <type>DayEntry</type>
+    <created-at type="datetime">2009-07-07T08:27:57Z</created-at>
+    <group-id type="integer">1</group-id>
+    <timer-started-at>2009-07-09T22:42:03Z</timer-started-at>
+    <text>Also doing something awesome</text>
+    <spent-at type="date">2009-07-07</spent-at>
+    <project>Internal</project>
+    <id type="integer">2</id>
+    <client>Company Internal</client>
+    <user-id type="integer">2</user-id>
+      <user> 
+        <avatar-thumb-url>http://coopapp.com/uploads/avatars/7312/thumb/ef5135f87023c3df9280579e92da6925.jpeg</avatar-thumb-url>
+        <name>Another User</name>
+        <id type="integer">2</id>
+        <email>user2@company.com</email>
+      </user>
+    <task>Working</task>
+    <hours type="float">1</hours>
+  </status>
+  
+  <status>
+    <type>DayEntry</type>
+    <created-at type="datetime">2009-07-07T06:27:57Z</created-at>
+    <group-id type="integer">1</group-id>
+    <timer-started-at nil="true"></timer-started-at>
+    <text>Doing something awesome</text>
+    <spent-at type="date">2009-07-07</spent-at>
+    <project>Internal</project>
+    <id type="integer">1</id>
+    <client>Company Internal</client>
+    <user-id type="integer">1</user-id>
+      <user>
+        <avatar-thumb-url>http://coopapp.com/uploads/avatars/7312/thumb/ef5135f87028c3df9280579e92da6925.jpeg</avatar-thumb-url>
+        <name>A User</name>
+        <id type="integer">1</id>
+        <email>user@company.com</email>
+      </user>
+    <task>Working</task>
+    <hours type="float">0.8</hours>
+  </status>
+  
+  <status>
+    <type>DayEntry</type>
+    <created-at type="datetime">2009-07-07T07:27:57Z</created-at>
+    <group-id type="integer">1</group-id>
+    <timer-started-at nil="true"></timer-started-at>
+    <text>Doing something more awesome</text>
+    <spent-at type="date">2009-07-07</spent-at>
+    <project>Internal</project>
+    <id type="integer">3</id>
+    <client>Company Internal</client>
+    <user-id type="integer">1</user-id>
+      <user>
+        <avatar-thumb-url>http://coopapp.com/uploads/avatars/7312/thumb/ef5135f87028c3df9280579e92da6925.jpeg</avatar-thumb-url>
+        <name>A User</name>
+        <id type="integer">1</id>
+        <email>user@company.com</email>
+      </user>
+    <task>Working</task>
+    <hours type="float">0.8</hours>
+  </status>
+
+</statuses>

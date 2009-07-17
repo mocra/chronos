@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tasks type="array">
+  <task>
+    <billable-by-default type="boolean">false</billable-by-default>
+    <cache-version type="integer">29</cache-version>
+    <created-at type="datetime">2009-01-12T14:44:37Z</created-at>
+    <deactivated type="boolean">false</deactivated>
+    <default-hourly-rate type="decimal" nil="true"></default-hourly-rate>
+    <id type="integer">236035</id>
+    <is-default type="boolean">true</is-default>
+    <name>Admin</name>
+    <updated-at type="datetime">2009-01-12T14:44:37Z</updated-at>
+  </task>
+  <task>
+    <billable-by-default type="boolean">true</billable-by-default>
+    <cache-version type="integer">1</cache-version>
+    <created-at type="datetime">2009-01-14T03:51:02Z</created-at>
+    <deactivated type="boolean">false</deactivated>
+    <default-hourly-rate type="decimal" nil="true"></default-hourly-rate>
+    <id type="integer">237177</id>
+    <is-default type="boolean">false</is-default>
+    <name>Banking</name>
+    <updated-at type="datetime">2009-01-14T03:51:02Z</updated-at>
+  </task>
+</tasks>
