@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<daily>
+  <for_day type="date">Thu, 16 Jul 2009</for_day>
+  <day_entries>
+  </day_entries>
+  <projects>
+    <project>
+      <name>A Project</name>
+      <code></code>
+      <id type="integer">1</id>
+      <client>A Client</client>
+      <tasks>
+        <task>
+          <name>Design</name>
+          <id type="integer">1</id>
+          <billable type="boolean">true</billable>
+        </task>
+        <task>
+          <name>Development</name>
+          <id type="integer">2</id>
+          <billable type="boolean">true</billable>
+        </task>
+        <task>
+          <name>HTML conversion</name>
+          <id type="integer">3</id>
+          <billable type="boolean">true</billable>
+        </task>
+        <task>
+          <name>Project Management</name>
+          <id type="integer">4</id>
+          <billable type="boolean">true</billable>
+        </task>
+        <task>
+          <name>Research</name>
+          <id type="integer">5</id>
+          <billable type="boolean">true</billable>
+        </task>
+        <task>
+          <name>Story boarding</name>
+          <id type="integer">6</id>
+          <billable type="boolean">true</billable>
+        </task>
+        <task>
+          <name>Admin</name>
+          <id type="integer">7</id>
+          <billable type="boolean">false</billable>
+        </task>
+      </tasks>
+    </project>
+  </projects>
+</daily>

@@ -20,10 +20,10 @@ module Chronos
           Options are:
         BANNER
         opts.separator ""
-        opts.on("-p", "--path=PATH", String,
-                "This is a sample message.",
-                "For multiple lines, add more strings.",
-                "Default: ~") { |arg| options[:path] = arg }
+        opts.on("-c", "--check", "Only check for running timers and exit.") { options[:check] = true }
+        opts.on("-s server", "--server server", "Specify the server to connect to.") { |server| options[:server] = server }
+        opts.on("-d", "--debug", "Print out debugging information.") { options[:debug] = true }
+        
         opts.on("-h", "--help",
                 "Show this help message.") { stdout.puts opts; exit }
         opts.parse!(arguments)
@@ -36,7 +36,7 @@ module Chronos
       path = options[:path]
 
       # do stuff
-      stdout.puts "To update this executable, look in lib/chronos/cli.rb"
+      Chronos::Bot.new(options)
     end
   end
 end

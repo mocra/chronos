@@ -15,7 +15,7 @@ Feature: Groups
   Given I am about to get Coop for groups
   When I ask Coop for the first group
   Then I should be given a Coop Group
-  Then the group should have 3 statuses
+  Then the group should have 6 statuses
   
   Scenario: Group statuses on certain dates
   Given I am logged in to sekret at Coop

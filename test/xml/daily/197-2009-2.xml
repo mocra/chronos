@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<daily>
+  <for_day type="date">Thu, 16 Jul 2009</for_day>
+  <day_entries>
+    <day_entry>
+      <id type="integer">1</id>
+      <spent_at type="date">2009-07-16</spent_at>
+      <user_id type="integer">2</user_id>
+      <client>A Client</client>
+      <project_id>1</project_id>
+      <project>A Project</project>
+      <task_id>1</task_id>
+      <task>Development</task>
+      <hours type="float">1.17</hours>
+      <notes>Some notes</notes>
+      <created_at type="datetime">Wed, 15 Jul 2009 23:49:18 +0000</created_at>
+    </day_entry>
+    <day_entry>
+      <id type="integer">3</id>
+      <spent_at type="date">2009-07-16</spent_at>
+      <user_id type="integer">2</user_id>
+      <client>A Client</client>
+      <project_id>1</project_id>
+      <project>Internal</project>
+      <task_id>1</task_id>
+      <task>Development</task>
+      <hours type="float">1.70</hours>
+      <notes>Further notes.</notes>
+      <created_at type="datetime">Thu, 16 Jul 2009 01:49:48 +0000</created_at>
+      <timer_started_at type="datetime">Thu, 16 Jul 2009 03:01:52 +0000</timer_started_at>
+    </day_entry>
+  </day_entries>
+  <projects>
+    <project>
+      <name>A Project</name>
+      <code></code>
+      <id type="integer">1</id>
+      <client>A Client</client>
+      <tasks>
+        <task>
+          <name>Design</name>
+          <id type="integer">1</id>
+          <billable type="boolean">true</billable>
+        </task>
+        <task>
+          <name>Development</name>
+          <id type="integer">2</id>
+          <billable type="boolean">true</billable>
+        </task>
+        <task>
+          <name>HTML conversion</name>
+          <id type="integer">3</id>
+          <billable type="boolean">true</billable>
+        </task>
+        <task>
+          <name>Project Management</name>
+          <id type="integer">4</id>
+          <billable type="boolean">true</billable>
+        </task>
+        <task>
+          <name>Research</name>
+          <id type="integer">5</id>
+          <billable type="boolean">true</billable>
+        </task>
+        <task>
+          <name>Story boarding</name>
+          <id type="integer">6</id>
+          <billable type="boolean">true</billable>
+        </task>
+        <task>
+          <name>Admin</name>
+          <id type="integer">7</id>
+          <billable type="boolean">false</billable>
+        </task>
+      </tasks>
+    </project>
+  </projects>
+</daily>

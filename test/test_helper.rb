@@ -33,11 +33,11 @@ def fixture_path(file)
 end
 
 def fake_harvest_url(path, method=:get)
-  FakeWeb.register_uri(method, "http://test.harvestapp.com/#{path}.xml", :file => fixture_path("#{path}.xml"))
+  FakeWeb.register_uri(method, "http://test.harvestapp.com/#{path}.xml", :body => fixture_path("#{path}.xml"))
 end
 
 def fake_coop_url(path, method=:get)
-  FakeWeb.register_uri(method, "http://coopapp.com/#{path}.xml", :file => fixture_path("#{path}.xml"))
+  FakeWeb.register_uri(method, "http://coopapp.com/#{path}.xml", :body => fixture_path("#{path}.xml"))
 end
 
 # Custom assert_raise to test exception message in addition to the exception itself.

@@ -25,8 +25,10 @@ class Harvest
       end
       
       class << self
+
         def without_running_timers
           todays_entries = Entry.find_all_by_day_and_year(Time.now.yday, Time.now.year)
+          
           well_behaved_user_ids = todays_entries.map(&:user_id).uniq
           find(:all).delete_if { |u| !u.is_active || well_behaved_user_ids.include?(u.id) }
         end

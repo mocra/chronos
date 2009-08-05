@@ -65,7 +65,7 @@
     <email-after-submit type="boolean">true</email-after-submit>
     <first-name>Truant</first-name>
     <has-access-to-all-future-projects type="boolean">false</has-access-to-all-future-projects>
-    <id type="integer">1234567890</id>
+    <id type="integer">3</id>
     <identity-url nil="true"></identity-url>
     <is-active type="boolean">true</is-active>
     <is-admin type="boolean">true</is-admin>

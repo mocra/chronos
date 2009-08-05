@@ -8,6 +8,7 @@ Similar.load_all_ruby_files_from_path(File.join(File.dirname(__FILE__), "chronos
 
 require 'chronos/harvest'
 require 'chronos/coop'
+require 'chronos/bot'
 
 $:.unshift(File.join(File.dirname(__FILE__), "chronos"))
 module Chronos

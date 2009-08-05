@@ -5,7 +5,9 @@ Feature: Entries
   
   Scenario: /entries/197/2009
   Given I am logged in to sekret at Harvest
-  And I am about to get harvest for entries for day 197 of 2009
+  And I am about to get harvest for people
+  And I am about to get harvest for all entries for day 197 of 2009
   When I ask Harvest for all entries on day 197 of 2009
+  Then there should be 4 entries
   Then the project of the first element should be A Project
   Then the client of the first element should be A Client

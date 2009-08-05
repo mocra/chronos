@@ -22,9 +22,26 @@ class Harvest
           end
         end
         
+        # Wow. Just wow.
+        # Who would've thought an API could be so bad?
+        # Even as an *administrator* for an account there is no way
+        # to get all the entries for all the users on a given day
+        # at least, in a single request.
+        #
+        # Thus, this travesty of Ruby you see before you.
+        # Firstly we gather the ids, and then have to make a request for every user.
+        # Oh, did I mention that the Harvest API limits you to 40 requests every 15 seconds?
+        #
+        # Fuck.
+        #
+        # Whilst this is not important for small companies (such as ourselves), large
+        # companies may run into issues.
         def find_all_by_day_and_year(day, year)
-          xml = Harvest.request("/daily/#{day}/#{year}")
-          collection(xml)
+          entries = []
+          Person.all.map(&:id).each do |id|
+            entries += collection(Harvest.request("/daily/#{day}/#{year}?of_user=#{id}"))
+          end
+          entries
         end
         
         def create(request={})

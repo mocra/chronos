@@ -1,0 +1,88 @@
+Debugging mode enabled.
+Warnings mode enabled.
+CONNECTING:
+    localhost:5222
+SENDING:
+    <stream:stream xmlns:stream='http://etherx.jabber.org/streams' xmlns='jabber:client' to='localhost' xml:lang='en' version='1.0' >
+RECEIVED:
+    <stream:stream from='localhost' xmlns:stream='http://etherx.jabber.org/streams' version='1.0' xml:lang='en' xmlns='jabber:client'/>
+RECEIVED:
+    <stream:features><mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism></mechanisms></stream:features>
+FEATURES: waiting...
+FEATURES: received
+FEATURES: waiting finished
+PROCESSING:
+    <stream:features xmlns='jabber:client'><mechanisms xmlns='urn:ietf:params:xml:ns:xmpp-sasl'><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism></mechanisms></stream:features> (REXML::Element)
+TRYING stanzacbs...
+TRYING message/iq/presence/cbs...
+SENDING:
+    <auth mechanism='DIGEST-MD5' xmlns='urn:ietf:params:xml:ns:xmpp-sasl'/>
+RECEIVED:
+    <challenge xmlns='urn:ietf:params:xml:ns:xmpp-sasl'>cmVhbG09ImxvY2FsaG9zdCIsbm9uY2U9Ijk5ZDRkNjBiNzhmOWE4NzM3MDcw
+    NmY4NGUwODQxODM1Iixxb3A9ImF1dGgiLGNoYXJzZXQ9dXRmLTgsYWxnb3Jp
+    dGhtPW1kNS1zZXNz</challenge>
+SASL DIGEST-MD5 challenge:
+    realm="localhost",nonce="99d4d60b78f9a87370706f84e0841835",qop="auth",charset=utf-8,algorithm=md5-sess
+    {"algorithm"=>"md5-sess", "charset"=>"utf-8", "qop"=>"auth", "nonce"=>"99d4d60b78f9a87370706f84e0841835", "realm"=>"localhost"}
+SASL DIGEST-MD5 response:
+    response=196ebe6577aaf97a31dc0ed29c36fb43,cnonce="0dbb9a22eb4f7acab7c83dfc1712b42c",digest-uri="xmpp/localhost",username="time",charset=utf-8,qop=auth,realm="localhost",nonce="99d4d60b78f9a87370706f84e0841835",nc=00000001
+    {"response"=>"196ebe6577aaf97a31dc0ed29c36fb43", "cnonce"=>"\"0dbb9a22eb4f7acab7c83dfc1712b42c\"", "digest-uri"=>"\"xmpp/localhost\"", "username"=>"\"time\"", "charset"=>"utf-8", "qop"=>"auth", "realm"=>"\"localhost\"", "nonce"=>"\"99d4d60b78f9a87370706f84e0841835\"", "nc"=>"00000001"}
+SENDING:
+    <response xmlns='urn:ietf:params:xml:ns:xmpp-sasl'>cmVzcG9uc2U9MTk2ZWJlNjU3N2FhZjk3YTMxZGMwZWQyOWMzNmZiNDMsY25vbmNlPSIwZGJiOWEyMmViNGY3YWNhYjdjODNkZmMxNzEyYjQyYyIsZGlnZXN0LXVyaT0ieG1wcC9sb2NhbGhvc3QiLHVzZXJuYW1lPSJ0aW1lIixjaGFyc2V0PXV0Zi04LHFvcD1hdXRoLHJlYWxtPSJsb2NhbGhvc3QiLG5vbmNlPSI5OWQ0ZDYwYjc4ZjlhODczNzA3MDZmODRlMDg0MTgzNSIsbmM9MDAwMDAwMDE=</response>
+RECEIVED:
+    <success xmlns='urn:ietf:params:xml:ns:xmpp-sasl'>Mzc1ODEzOGM5Mzk1MmM2NzU5Y2YwMTdiNmJkMjdlNzk=</success>
+SENDING:
+    <stream:stream xmlns:stream='http://etherx.jabber.org/streams' xmlns='jabber:client' to='localhost' xml:lang='en' version='1.0' >
+RECEIVED:
+    <stream:stream from='localhost' xmlns:stream='http://etherx.jabber.org/streams' version='1.0' xml:lang='en' xmlns='jabber:client'/>
+RECEIVED:
+    <stream:stream from='example.com' xmlns:stream='http://etherx.jabber.org/streams' id='time_99d4d60b78f9a87370706f84e0841835' version='1.0' xmlns='jabber:client'/>
+PROCESSING:
+    <stream:stream from='example.com' xmlns:stream='http://etherx.jabber.org/streams' id='time_99d4d60b78f9a87370706f84e0841835' version='1.0' xmlns='jabber:client'/> (REXML::Element)
+TRYING stanzacbs...
+TRYING message/iq/presence/cbs...
+RECEIVED:
+    <stream:features><bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'/><session xmlns='urn:ietf:params:xml:ns:xmpp-session'/></stream:features>
+FEATURES: received
+SENDING:
+    <iq type='set' id='1832' xmlns='jabber:client'><bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'/></iq>
+PROCESSING:
+    <stream:features xmlns='jabber:client'><bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'/><session xmlns='urn:ietf:params:xml:ns:xmpp-session'/></stream:features> (REXML::Element)
+TRYING stanzacbs...
+TRYING message/iq/presence/cbs...
+RECEIVED:
+    <iq type='result' id='1832'><bind xmlns='urn:ietf:params:xml:ns:xmpp-bind'><jid>time@example.com/99D4D60B</jid></bind></iq>
+SENDING:
+    <iq type='set' id='2601' xmlns='jabber:client'><session xmlns='urn:ietf:params:xml:ns:xmpp-session'/></iq>
+RECEIVED:
+    <iq type='result' id='2601'/>
+SENDING:
+    <iq type='get' xmlns='jabber:client'><query xmlns='jabber:iq:roster'/></iq>
+SENDING:
+    <presence xmlns='jabber:client'/>
+RECEIVED:
+    <iq type='result' to='time@example.com/99D4D60B'><query xmlns='jabber:iq:roster'><item jid='alice@example.com' subscription='both'/><item jid='bob@example.com' subscription='both'/></query></iq>
+PROCESSING:
+    <iq type='result' to='time@example.com/99D4D60B' xmlns='jabber:client'><query xmlns='jabber:iq:roster'><item jid='alice@example.com' subscription='both'/><item jid='bob@example.com' subscription='both'/></query></iq> (Jabber::Iq)
+TRYING stanzacbs...
+TRYING message/iq/presence/cbs...
+RECEIVED:
+    <presence from='alice@example.com.111A111' to='time@example.com/99D4D60B'><priority>1</priority></presence>
+PROCESSING:
+    <presence from='alice@example.com.111A111' to='time@example.com/99D4D60B' xmlns='jabber:client'><priority>1</priority></presence> (Jabber::Presence)
+TRYING stanzacbs...
+TRYING message/iq/presence/cbs...
+RECEIVED:
+    <presence from='bobby@example.com.222A222' to='time@example.com/99D4D60B'><priority>1</priority></presence>
+PROCESSING:
+    <presence from='bobby@example.com.222A222' to='time@example.com/99D4D60B' xmlns='jabber:client'><priority>1</priority></presence> (Jabber::Presence)
+TRYING stanzacbs...
+TRYING message/iq/presence/cbs...
+SENDING:
+    <message type='chat' id='1' to='john.crombie@mocra.com' xmlns='jabber:client'><body>Hey John Crombie, Please go to http://coopapp.com/groups/3965 and start a timer.</body></message>
+SENDING:
+    <message type='chat' id='1' to='matt@mocra.com' xmlns='jabber:client'><body>Hey Matt Gallagher, Please go to http://coopapp.com/groups/3965 and start a timer.</body></message>
+SENDING:
+    <message type='chat' id='1' to='bjeanes@mocra.com' xmlns='jabber:client'><body>Hey Bodaniel Jeanes, Please go to http://coopapp.com/groups/3965 and start a timer.</body></message>
+SENDING:
+    <message type='chat' id='1' to='accounts@mocra.com' xmlns='jabber:client'><body>Hey Dr Nic Williams, Please go to http://coopapp.com/groups/3965 and start a timer.</body></message>
